@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>staticpagedemo</title>
+    </head>
+    <body>
+        <div>nrml elm</div>
+        <div id="after1"></div>
+        <script id="script">/*cmnt elm script*/</script>
+        <script id="afterscript"></script>
+        <noscript>nscrpt elm</noscript>
+        <style id="style">
+            /*cmnt elm style*/
+        </style>
+        <style id="afstyle"></style>
+        <div id="hidden">
+            hdn elm
+        </div>
+        <div id="invisible">
+            invsbl elm
+        </div>
+        <div id="opacity">
+            opct elm
+        </div>
+        <div id="opacity2">
+            opct2 elm
+        </div>
+        <style>
+            #after1::after {
+                content: 'psdafter elm';
+            }
+            #afterscript::after {
+                content: 'afscrpt elm';
+            }
+            #afstyle::after {
+                content: 'afstyle elm';
+            }
+            #script, #afterscript {
+                display: block !important;
+            }
+            #style, #afstyle {
+                display: block !important;
+            }
+            #hidden {
+                display: none;
+            }
+            #invisible {
+                visibility: hidden;
+            }
+            #opacity {
+                opacity: 0;
+            }
+            #opacity2 {
+                opacity: 0.5;
+            }
+            head {
+                display: block!important;
+            }
+        </style>
+    </body>
+</html>
